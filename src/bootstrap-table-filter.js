@@ -63,7 +63,7 @@
             return 'Remove all filters';
         },
         formatSearchMessage: function() {
-            return '';//'Search';
+            return 'Recherche';
         },
 
         onAll: function(name, args) {
@@ -190,7 +190,7 @@
                 var label;
                 if (searchPhrase.length) {
                     vals = vals.filter(function(el) {
-                        return rowLabel(el).indexOf(searchPhrase) > -1
+                        return rowLabel(el).toUpperCase().indexOf(searchPhrase.toUpperCase()) > -1
                     });
                 }
                 this.clearFilterOptions(filter.field);
