@@ -63,7 +63,7 @@
             return 'Remove all filters';
         },
         formatSearchMessage: function() {
-            return 'Search';
+            return '';//'Search';
         },
 
         onAll: function(name, args) {
@@ -194,7 +194,7 @@
                     });
                 }
                 this.clearFilterOptions(filter.field);
-                this.fillFilterOptions(filter.field, vals.slice(0, 20));
+                this.fillFilterOptions(filter.field, vals/*.slice(0, 20)*/);
             }
         }
     };
